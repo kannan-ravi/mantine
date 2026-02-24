@@ -17,7 +17,14 @@ function Header() {
   });
 
   return (
-    <Box pos="fixed" w="100%" style={{ zIndex: 1000 }}>
+    <Box
+      pos="fixed"
+      top={0}
+      left={0}
+      w="100%"
+      style={{ zIndex: 1000 }}
+      bg={theme.other.peachLight}
+    >
       <header>
         <Container size="xl">
           <Group justify="space-between" p={18} h="100%">
