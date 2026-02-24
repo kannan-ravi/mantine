@@ -13,7 +13,6 @@ function Hero() {
       pb={80}
       pos="relative"
       display="flex"
-      flexDirection="column"
       h="calc(100vh - 77px)"
     >
       <Container size="xl" w="100%" h="100%">
