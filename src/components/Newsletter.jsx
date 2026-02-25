@@ -5,14 +5,12 @@ import {
   Text,
   Title,
   Flex,
-  useMantineTheme,
 } from "@mantine/core";
 import { useForm, isEmail } from "@mantine/form";
 import { useState } from "react";
 import { theme } from "../theme/theme";
 
 function Newsletter() {
-  const mantineTheme = useMantineTheme();
   const [successMessage, setSuccessMessage] = useState("");
 
   const form = useForm({
@@ -36,7 +34,7 @@ function Newsletter() {
     >
       <Box maw={600} mx="auto">
         <Text
-          c={mantineTheme.other.green}
+          c={theme.other.green}
           mb={12}
           size="sm"
           fw={600}
@@ -51,7 +49,7 @@ function Newsletter() {
 
         <Text
           mb={40}
-          c={mantineTheme.other.gray}
+          c={theme.other.gray}
           size="sm"
           lh={1.6}
           ta="center"
